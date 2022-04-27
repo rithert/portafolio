@@ -2,17 +2,17 @@
 
 
 :root{
-/*     --niagara: #0cbba1;
+    --niagara: #0cbba1;
     --woodsmoke: #181919;
     --silver-sand: #b8bdbd;
     --genoa: #12796a;
     --fedora: #716f71;
     --slate-gray: #788997;
     --elf-green: #0a9474;
-    --trout: #4b525d; */
+    --fondo-gris: #4b525d; 
+    --first-color:#0cbba1;
 
-
-    --first-color: #d90062;
+    /*  --first-color: #d90062; */
     --first-alpha-color: rgba(217, 0, 98, 0.75);
     --second-color: #14192d;
     --second-alpha-color: rgba(20, 25, 45, 0.75);
@@ -110,12 +110,23 @@ p{
   line-height: 1.6;
 }
 
-/* componentes */
+/*--------componentes----------- */
+/* -----seccion Acerca----------------- */
 
+@media screen and (min-width:1024px) {
+    .about{
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+        justify-content: space-between;
+        align-content: center;
+    }
+
+}
 
 /* imagen */
 .hero-image{
-    background-image: var(--image);
+    /* background-image: var(--image); */
+    background-color: var(--second-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -128,7 +139,7 @@ p{
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: var(--black-alpha-color);
+    /* background-color: var(--black-alpha-color); */
 
 }
 
@@ -145,7 +156,7 @@ p{
 }
 
 .hero-image-blur svg{
-    fill: var(--white-color);
+    fill: #0a9474;
     width: 5vw;
 }
 
@@ -232,10 +243,11 @@ p{
     }
 }
 
+.about > article{
+    margin-bottom: 2rem;
+}
 
-
-
-
+/* servcios */
 
 
 
@@ -243,6 +255,21 @@ p{
 /* Utilities */
 
 /* Se pueden usar para otros proyectos */
+
+
+.bg-gray-light{
+    background-color: var(--gray-light-color);
+}
+
+.section-title{
+    border-top: thin solid var(--first-color);
+    border-bottom: thin solid var(--first-color);
+    width: 250px;
+    margin: 2rem auto;
+    text-align: center;
+    color: var(--title-color);
+}
+
 .container{
     margin-left: auto;
     margin-right: auto;
@@ -261,7 +288,7 @@ p{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--b);
     background-color: var(--first-color);
 }
 
@@ -269,8 +296,76 @@ p{
     background-color: #0cbba1 ;
     color: black;
 }
+
+
+.grid-layout{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 30% 30% 30% ;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    
+}
+
+.caja > svg{
+    margin: 0 auto;
+    transform: scale(0.9);
+    width: 100%;
+}
+
+
+
 .none{
     display: none;
+}
+
+.grey-scale{
+    filter: grayscale(1);
+}
+
+.text-lef{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.section{
+    padding: 2rem 1rem;
+}
+
+@media screen and (min-width:1024px) {
+    .text-lg-left{
+        text-align: left;
+    }
+    
+    .text-lg-center{
+        text-align: center;
+    }
+    
+    .text-lg-right{
+        text-align: right;
+    }
+
+    .full-lg-screen{
+        width: 100%;
+        min-height: 100vh;
+
+    }
 }
 
 
@@ -302,6 +397,68 @@ header > .container{
     text-decoration: none;
 }
 
+.caja .js:hover{
+    fill: rgb(239, 216, 29);
+}
+
+.caja .html5:hover{
+    fill: rgb(228, 77, 38);
+}
+
+.caja .git:hover{
+    fill: rgb(228, 77, 38);
+}
+
+.caja .css:hover{
+    fill: rgb(21, 154, 212)
+}
+
+.caja .bot:hover{
+    fill: var(--first-color);
+}
+
+
+.card {
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.card h3{
+    color: var(--title-color);
+}
+
+.card svg{
+    fill: var(--first-color);
+    margin-bottom: 1.5rem;
+}
+
+
+.portaafolio-card {
+    
+}
+
+
+
+
+/* para tabletas */
+
+@media screen and (min-width:768px){
+    .services > .container{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .services .section-title {
+        grid-column: span 2;
+    }
+    
+}
+
+/* escritorio */
+
 @media screen and (min-width:1024px){
     .header{
         position: sticky;
@@ -309,12 +466,13 @@ header > .container{
         padding: 0.5rem;
         height: calc (var(--header-height)-0.5rem);
     }
-}
 
+    .services > .container{
+        display: grid;
+        grid-template-columns: repeat(3,30%);
+    }
 
-/* para tabletas */
-
-@media screen and (min-width:768px){
-
-    
+    .services .section-title {
+        grid-column: span 3;
+    }
 }
