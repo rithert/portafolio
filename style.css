@@ -365,9 +365,40 @@ p{
 }
 
 .portafolio-modal{
-    display: flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
     align-items: center;
     justify-content: center;
+    background-color: var(--second-color);
+}
+
+.portafolio-modal .portafolio-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--first-color);
+    text-align:center ;
+}
+
+.portafolio-info .details{
+    display: flex;
+    width: 40%;
+}
+
+.portafolio-info h3{
+    color: var(--white-color);
+}
+
+.details > a {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--first-color);
+    margin: auto;
+    margin: 0.5rem 1rem  ;
+    text-decoration: none;
 }
 
 .grey-scale{
@@ -406,6 +437,12 @@ p{
     .full-lg-screen{
         width: 100%;
         min-height: 100vh;
+    }
+
+    .portafolio-modal {
+        width: 800px;
+        display: flex;
+        flex-direction: row;
     }
 }
 
