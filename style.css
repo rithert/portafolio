@@ -10,14 +10,15 @@
     --slate-gray: #788997;
     --elf-green: #0a9474;
     --fondo-gris: #4b525d; 
-    --first-color:#0cbba1;
+    --first-color:rgb(8, 253, 216);
+    --form2: #2C2F40;
+    --form1: rgb(29, 29, 29);
+    --form3:rgb(105, 117, 117);
 
     /*  --first-color: #d90062; */
     --first-alpha-color: #14192de5;
     --second-color: #14192d;
     --second-alpha-color: rgba(20, 25, 45, 0.75);
-    --third-color: #501464;
-    --third-alpha-color: rgba(80, 20, 100, 0.75);
     --white-color: #fff;
     --gray-light-color: #f3f3f3;
     --gray-color: #ccc;
@@ -122,6 +123,7 @@ p{
     }
 
 }
+
 
 /* imagen */
 .hero-image{
@@ -285,25 +287,26 @@ p{
 }
 
 .contact-form > *{
-    padding: .5rem;
+    padding: 1rem;
     margin: 1rem auto;
     display: block;
     width: 100%;
+    color: var(--form3);
 }
 
 .contact-form input, .contact-form textarea{
-    font-size: .85rem;
+    font-size: 1rem;
     font-family: var(--font);
+    background-color: var(--form2);
 }
 
 .contact-form input{
     border: 0;
-    border-bottom: thin solid var(--gray-dark-color);
     padding-left: 1rem;
 }
 
 .contact-form textarea {
-    border: thin solid var(--gray-dark-color);
+    border: 0;
     resize: none;
 }
 
@@ -312,6 +315,7 @@ p{
     margin-top: 0;
     cursor: pointer;
     transition: all .5s ease-out;
+    background-color: var(--first-color);
 }
 
 .contact-form input[type="submit"]:hover{
@@ -320,7 +324,7 @@ p{
 
 
 .contact-form *::placeholder{
-    color: var(--gray-dark-color);
+    color: var(--form3);
 }
 
 
@@ -521,6 +525,15 @@ p{
 
 
 /* EStilos unicos */
+
+.contact{
+    background-color: var(--second-color);
+}
+
+.contact .section-title{
+    color: var(--white-color);
+}
+
 .contact-card{
     margin: 1rem auto;
     padding: 1rem;
@@ -531,6 +544,8 @@ p{
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    background-color: var(--form2);
+    color: var(--white-color);
 }
 
 .contact-card svg{
@@ -555,6 +570,15 @@ header > .container{
     display: flex; 
     justify-content: space-between;
     align-items: center;
+}
+
+.footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--form1);
+    color: var(--first-color);
+    font-weight: bold;
+
 }
 
 .logo a{
