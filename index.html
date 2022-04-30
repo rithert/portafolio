@@ -9,6 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
+    <!-- CEO -->
+    <title> Portafolio CV - Rither Tandazo</title>
+    <meta name="description" content="Binevenidos a mi portafolio profesioal- Soy Rither Tandazo Developer">
+    <link rel="canonical" href="ruta">
+    <link rel="favicon" href="ruta-del-sitio/assets/favicon.png">
+    <link rel="apple-touch-icon" href="ruta-del-sitio/assets/favicon.png">
+    <meta name="theme-color" content="#14192d"> <!-- barra de busqueda -->
+    <meta name="twitter.card" content="summary">
+    <meta name="twitter.title" content="Portafolio CV - Rither Tandazo">
+    <meta name="twitterimage" content="ruta/assets/image-que-acompaña">
+    <meta name="twitter.url" content="ruta">
+    <meta name="twitter.description" content="Binevenidos a mi portafolio profesioal- Soy Rither Tandazo Developer">
+    <meta property="og.type" content="website">
+    <meta property="og:title" content="Portafolio CV - Rither Tandazo">
+    <meta property="og:description" content="Binevenidos a mi portafolio profesioal- Soy Rither Tandazo Developer">
+    <meta property="ogimage" content="ruta/assets/image-que-acompaña">
+    <meta property="ogurl" content="ruta">
 </head>
 <body>
     <header class="header">
@@ -403,27 +421,27 @@
                         </a>
                     </small>
                 </aside>
-                <form class="contact-form"action="">
-                    <input type="text" name="name" placeholder="Ingresa tu nombre" title="Nombre solo acepta letras y espacion en blanco" pattern= "^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"required>
-                    <input type="email" name="email" placeholder="Ingresa tu correo" title="email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"required>
-                    <textarea name="comments" cols="50" rows="10" placeholder="Dejame tus comentarios*"required></textarea>
-                    <div class="contact-form-loader">
-                        <img src="assets/loader.svg" alt="Enviando">
-                    </div>
-                    <input type="submit" class="btn" value="Enviar mensaje">
-                </form>
-                <article id="gracias" class="modal">
-                    <div class="modal-content">
-                        <article class="contact-form-respose">
-                            <h3>
-                                Muchas gracias
-                                <br>
-                                Por tus comentarios
-                            </h3>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z"/><path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/><path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"/></svg>
-                        </article>
-                    </div>
-                </article>
+            </article>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Ingresa tu nombre" title="Nombre solo acepta letras y espacion en blanco" pattern= "^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"required>
+                <input type="email" name="email" placeholder="Ingresa tu correo" title="email incorrecto" required>
+                <textarea name="comments" cols="50" rows="10" placeholder="Dejame tus comentarios*"required></textarea>
+                <div class="contact-form-loader text-center none">
+                    <img src="assets/loader.svg" alt="Enviando">
+                </div>
+                <input type="submit" class="btn" value="Enviar mensaje">
+            </form>
+            <article id="gracias" class="modal">
+                <div class="modal-content">
+                    <article class="contact-form-respose">
+                        <h3>
+                            Muchas gracias
+                            <br>
+                            Por tus comentarios
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12,18c4,0,5-4,5-4H7C7,14,8,18,12,18z"/><path d="M12,2C6.486,2,2,6.486,2,12c0,5.514,4.486,10,10,10s10-4.486,10-10C22,6.486,17.514,2,12,2z M12,20c-4.411,0-8-3.589-8-8 s3.589-8,8-8s8,3.589,8,8S16.411,20,12,20z"/><path d="M13 12l2 .012C15.012 11.55 15.194 11 16 11s.988.55 1 1h2c0-1.206-.799-3-3-3S13 10.794 13 12zM8 11c.806 0 .988.55 1 1h2c0-1.206-.799-3-3-3s-3 1.794-3 3l2 .012C7.012 11.55 7.194 11 8 11z"/></svg>
+                    </article>
+                </div>
             </article>
         </div>
     </section>

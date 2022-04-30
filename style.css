@@ -276,6 +276,76 @@ p{
     max-width: var(--max-width);
 }
 
+/* Formulario de contacto */
+
+.contact-form{
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.contact-form > *{
+    padding: .5rem;
+    margin: 1rem auto;
+    display: block;
+    width: 100%;
+}
+
+.contact-form input, .contact-form textarea{
+    font-size: .85rem;
+    font-family: var(--font);
+}
+
+.contact-form input{
+    border: 0;
+    border-bottom: thin solid var(--gray-dark-color);
+    padding-left: 1rem;
+}
+
+.contact-form textarea {
+    border: thin solid var(--gray-dark-color);
+    resize: none;
+}
+
+
+.contact-form input[type="submit"]{
+    margin-top: 0;
+    cursor: pointer;
+    transition: all .5s ease-out;
+}
+
+.contact-form input[type="submit"]:hover{
+    opacity: .75;
+}
+
+
+.contact-form *::placeholder{
+    color: var(--gray-dark-color);
+}
+
+
+.modal#gracias:target{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.contact-form-respose{
+    padding:  1rem;
+    background-color: var(--white-color);
+    width: 400px;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.contact-form-respose svg{
+    margin-top: 2rem;
+    width: 4rem;
+    height: 4rem;
+}
+
+
+
+
 .box-shadows-1{
     box-shadow: 4px 4px 16px rgba(0,0,0, 0.25);
 }
@@ -460,17 +530,13 @@ p{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 
 .contact-card svg{
     fill: var(--first-color);
     width: 3rem;
     height: 3rem;
-}
-
-.social-media svg{
-    width: 1.5rem;
-    height: 1.5rem;
 }
 
 
@@ -517,6 +583,7 @@ header > .container{
 .caja .bot:hover{
     fill: var(--first-color);
 }
+
 
 
 .card {
@@ -577,11 +644,29 @@ header > .container{
 
 }
 
+.social-media a {
+    padding: 0 0.4rem;
+    text-decoration: none;
+}
+
+.social-media svg{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+
 
 
 /* para tabletas */
 
 @media screen and (min-width:768px){
+    
+    .contact-cards{
+        display: grid;
+        grid-template-columns: repeat(2,48%);
+        justify-content: space-between;
+    }
+    
     .services > .container{
         display: grid;
         grid-template-columns: repeat(2,45%);
@@ -611,6 +696,11 @@ header > .container{
 /* escritorio */
 
 @media screen and (min-width:1024px){
+    
+    .contact-cards{
+        grid-template-columns: repeat(4,24%);
+    }
+
     .header{
         position: sticky;
         top: 0;
