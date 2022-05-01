@@ -44,9 +44,9 @@ html{
     box-sizing: border-box;
     font-family: var(--font);
     font-size: 16px;
-    scroll-behavior: smooth;
     font-family: var(--font);
-    font-size: 16px;
+    font-size: 16px; 
+    scroll-behavior: smooth;
 }
 
 *,
@@ -377,7 +377,8 @@ p{
     display: grid;
     grid-template-columns: 30% 30% 30% ;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
+    padding: 2rem; 
 }
 
 .caja{
@@ -572,12 +573,18 @@ header > .container{
     align-items: center;
 }
 
+
+.isactive {
+    border-bottom: thin solid var(--first-color);
+}
+
 .footer{
     text-align: center;
     padding: 1rem;
     background-color: var(--form1);
     color: var(--first-color);
     font-weight: bold;
+    margin-bottom: var(--header-height);
 
 }
 
@@ -621,7 +628,7 @@ header > .container{
 }
 
 .card svg{
-    fill: var(--first-color);
+    fill: var(--second-color);
     margin-bottom: 1.5rem;
 }
 
@@ -723,6 +730,10 @@ header > .container{
     
     .contact-cards{
         grid-template-columns: repeat(4,24%);
+    }
+
+    .footer{
+        margin-bottom: 0;
     }
 
     .header{
