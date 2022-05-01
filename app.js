@@ -55,3 +55,38 @@ $formulario.addEventListener("submit",e =>{
     })
 })
 
+/* Indicado avance en el  menu */
+addEventListener('DOMContentLoaded',()=>{
+    
+    const secciones = document.querySelectorAll(".section")
+    const menuItems = document.querySelectorAll(".menu_item")
+    
+    console.log(secciones)
+    console.log(menuItems)
+    
+    const funcionObserver = entries =>{
+        entries.forEach(entry => {
+            if(entry.isIntersecting){
+                const itemActual = Array.from(menuItems).find(item => item.dataset.url === entry.target.id);
+                itemActual.classList.add("isactive")
+                for(const item of menuItems){
+                    if(item != itemActual){
+                        item.classList.remove("isactive")
+                    }
+                } 
+            }
+        });
+    }
+    
+    const observer = new IntersectionObserver(funcionObserver,{
+        root:null,
+        rootMargin:'0px',
+        threshold: 0.8
+    })
+    secciones.forEach(seccion => observer.observe(seccion))
+
+})
+
+
+
+
