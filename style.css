@@ -621,6 +621,8 @@ header > .container{
     color: var(--first-color);
     font-weight: bold;
     margin-bottom: var(--header-height);
+    opacity: 0;
+    margin-bottom: 0;
 
 }
 
@@ -733,7 +735,16 @@ header > .container{
         grid-template-columns: repeat(2,48%);
         justify-content: space-between;
     }
+
+    .footer{
+        opacity: 1;
+    }
     
+    .isactive {
+        border-bottom: thin solid var(--first-color);
+        width: 50%;
+    }
+
     .services > .container{
         display: grid;
         grid-template-columns: repeat(2,45%);
@@ -770,6 +781,7 @@ header > .container{
 
     .footer{
         margin-bottom: 0;
+        opacity: 1;
     }
 
     .header{
