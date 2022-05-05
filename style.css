@@ -259,9 +259,25 @@ p{
 /* Se pueden usar para otros proyectos */
 
 
+
 .bg-gray-light{
     background-color: var(--gray-light-color);
 }
+
+.border-pos{
+    border:5px solid green;
+}
+
+.border-neg{
+    border: 5px solid red;
+}
+
+.desactivar-btn{
+    pointer-events: none;
+    opacity: 50%;
+    cursor: not-allowed;
+}
+
 
 .section-title{
     border-top: thin solid var(--first-color);
@@ -324,7 +340,7 @@ p{
 
 
 .contact-form *::placeholder{
-    color: var(--form3);
+    color: var(--white-color);
 }
 
 
@@ -362,7 +378,7 @@ p{
     font-weight: bold;
     text-align: center;
     text-decoration: none;
-    color: var(--b);
+    color: var(--black-color);
     background-color: var(--first-color);
 }
 
@@ -401,6 +417,13 @@ p{
 
 .none{
     display: none;
+}
+
+
+.error{
+    background-color: red;
+    text-align: center;
+    color : white ;
 }
 
 /* modal */
@@ -526,6 +549,19 @@ p{
 
 
 /* EStilos unicos */
+
+.botones{
+    display: flex;
+    justify-content: space-around;
+}
+
+.botones #btnreset{
+    background-color: var(--fedora);
+}
+
+.botones #btnreset:hover{
+    background-color: var(--first-color);
+}
 
 .contact{
     background-color: var(--second-color);

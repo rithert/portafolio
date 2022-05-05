@@ -23,7 +23,7 @@ menu.addEventListener("click",(e)=>{
 })
 
 /* 
-formulario de contacto */
+formulario de contacto 
 
 const $formulario = document.querySelector(".contact-form")
 const $loader =  document.querySelector(".contact-form-loader")
@@ -54,6 +54,9 @@ $formulario.addEventListener("submit",e =>{
         },3000)
     })
 })
+*/
+
+
 
 /* Indicado avance en el  menu */
 addEventListener('DOMContentLoaded',()=>{
