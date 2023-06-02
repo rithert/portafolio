@@ -52,35 +52,35 @@ sr.reveal(".card", {
 
 // proyectos
 
-sr.reveal("#trabajo-1", {
+sr.reveal("#work-1", {
     duration: 2000,
     origin: "bottom",
     distance: "200px",
     delay: 500,
 });
 
-sr.reveal("#trabajo-2", {
+sr.reveal("#work-2", {
     duration: 2000,
     origin: "bottom",
     distance: "200px",
     delay: 1000,
 });
 
-sr.reveal("#trabajo-3", {
+sr.reveal("#work-3", {
     duration: 2000,
     origin: "bottom",
     distance: "200px",
     delay: 1500,
 });
 
-sr.reveal("#trabajo-4", {
+sr.reveal("#work-4", {
     duration: 2000,
     origin: "bottom",
     distance: "200px",
     delay: 2000,
 });
 
-sr.reveal("#trabajo-5", {
+sr.reveal("#work-5", {
     duration: 2000,
     origin: "bottom",
     distance: "200px",
